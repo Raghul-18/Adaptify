@@ -61,12 +61,6 @@
 					href="/workspace/models">{$i18n.t('Models')}</a
 				>
 
-				<a
-					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/prompts')
-						? 'bg-gray-50 dark:bg-gray-850'
-						: ''} transition"
-					href="/workspace/prompts">{$i18n.t('Prompts')}</a
-				>
 
 				<a
 					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes(
@@ -79,25 +73,7 @@
 					{$i18n.t('Documents')}
 				</a>
 
-				<a
-					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/tools')
-						? 'bg-gray-50 dark:bg-gray-850'
-						: ''} transition"
-					href="/workspace/tools"
-				>
-					{$i18n.t('Tools')}
-				</a>
 
-				<a
-					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes(
-						'/workspace/functions'
-					)
-						? 'bg-gray-50 dark:bg-gray-850'
-						: ''} transition"
-					href="/workspace/functions"
-				>
-					{$i18n.t('Functions')}
-				</a>
 			</div>
 		</div>
 

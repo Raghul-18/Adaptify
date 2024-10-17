@@ -49,7 +49,7 @@
 							)}
 							placement="right"
 						>
-							<img
+							<!-- <img
 								crossorigin="anonymous"
 								src={model?.info?.meta?.profile_image_url ??
 									($i18n.language === 'dg-DG'
@@ -58,7 +58,7 @@
 								class=" size-[2.7rem] rounded-full border-[1px] border-gray-200 dark:border-none"
 								alt="logo"
 								draggable="false"
-							/>
+							/> -->
 						</Tooltip>
 					</button>
 				{/each}
@@ -80,16 +80,18 @@
 		<div
 			class=" mt-2 mb-4 text-3xl text-gray-800 dark:text-gray-100 font-medium text-left flex items-center gap-4 font-primary"
 		>
+
+		<!-- chatpage -->
 			<div>
-				<div class=" capitalize line-clamp-1" in:fade={{ duration: 200 }}>
+				<!-- <div class=" capitalize line-clamp-1" in:fade={{ duration: 200 }}>
 					{#if models[selectedModelIdx]?.info}
 						{models[selectedModelIdx]?.info?.name}
 					{:else}
 						{$i18n.t('Hello, {{name}}', { name: $user.name })}
 					{/if}
-				</div>
+				</div> -->
 
-				<div in:fade={{ duration: 200, delay: 200 }}>
+				<!-- <div in:fade={{ duration: 200, delay: 200 }}>
 					{#if models[selectedModelIdx]?.info?.meta?.description ?? null}
 						<div
 							class="mt-0.5 text-base font-normal text-gray-500 dark:text-gray-400 line-clamp-3 markdown"
@@ -119,17 +121,18 @@
 							{$i18n.t('How can I help you today?')}
 						</div>
 					{/if}
-				</div>
+				</div> -->
 			</div>
 		</div>
+		<!-- chatpage -->
 
-		<div class=" w-full font-primary" in:fade={{ duration: 200, delay: 300 }}>
+		<!-- <div class=" w-full font-primary" in:fade={{ duration: 200, delay: 300 }}>
 			<Suggestions
 				suggestionPrompts={models[selectedModelIdx]?.info?.meta?.suggestion_prompts ??
 					$config?.default_prompt_suggestions ??
 					[]}
 				{submitPrompt}
 			/>
-		</div>
+		</div> -->
 	</div>
 {/key}
