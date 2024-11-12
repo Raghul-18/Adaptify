@@ -157,17 +157,18 @@ class SPAStaticFiles(StaticFiles):
 
 print(
     rf"""
-  ___                    __        __   _     _   _ ___ 
- / _ \ _ __   ___ _ __   \ \      / /__| |__ | | | |_ _|
-| | | | '_ \ / _ \ '_ \   \ \ /\ / / _ \ '_ \| | | || | 
-| |_| | |_) |  __/ | | |   \ V  V /  __/ |_) | |_| || | 
- \___/| .__/ \___|_| |_|    \_/\_/ \___|_.__/ \___/|___|
-      |_|                                               
+              _             _   _  __       
+     /\      | |           | | (_)/ _|      
+    /  \   __| | __ _ _ __ | |_ _| |_ _   _ 
+   / /\ \ / _` |/ _` | '_ \| __| |  _| | | |
+  / ____ \ (_| | (_| | |_) | |_| | | | |_| |
+ /_/    \_\__,_|\__,_| .__/ \__|_|_|  \__, |
+                     | |               __/ |
+                     |_|              |___/ 
 
-      
-v{VERSION} - building the best open-source AI user interface.
-{f"Commit: {WEBUI_BUILD_HASH}" if WEBUI_BUILD_HASH != "dev-build" else ""}
-https://github.com/open-webui/open-webui
+- Raghul Prasanth 
+Building the best open-source AI user interface.
+https://github.com/Raghul-18/Adaptify
 """
 )
 
