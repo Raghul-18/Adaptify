@@ -83,15 +83,15 @@
 
 		<!-- chatpage -->
 			<div>
-				<!-- <div class=" capitalize line-clamp-1" in:fade={{ duration: 200 }}>
+				<div class=" capitalize line-clamp-1" in:fade={{ duration: 200 }}>
 					{#if models[selectedModelIdx]?.info}
 						{models[selectedModelIdx]?.info?.name}
 					{:else}
 						{$i18n.t('Hello, {{name}}', { name: $user.name })}
 					{/if}
-				</div> -->
+				</div>
 
-				<!-- <div in:fade={{ duration: 200, delay: 200 }}>
+				<div in:fade={{ duration: 200, delay: 200 }}>
 					{#if models[selectedModelIdx]?.info?.meta?.description ?? null}
 						<div
 							class="mt-0.5 text-base font-normal text-gray-500 dark:text-gray-400 line-clamp-3 markdown"
@@ -121,7 +121,7 @@
 							{$i18n.t('How can I help you today?')}
 						</div>
 					{/if}
-				</div> -->
+				</div>
 			</div>
 		</div>
 		<!-- chatpage -->
